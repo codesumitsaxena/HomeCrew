@@ -1,0 +1,81 @@
+/* Inter Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(90deg, #fdf6f0, #e9e9ff); 
+  min-height: 100vh;
+}
+
+.custom-navbar {
+  background: linear-gradient(to right, #fdfaf9, #f1f1fd);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  font-family: 'Inter', sans-serif;
+}
+
+.navbar-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #6c63ff;
+}
+
+.custom-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #4a4a4a !important;
+  margin: 0 14px;
+  transition: all 0.3s ease;
+}
+
+.custom-link:hover {
+  color: #6c63ff !important;
+  text-decoration: underline;
+}
+
+.book-btn {
+  background-color: #A78BFA !important;
+  color: white !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  padding: 10px 22px;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 8px rgba(154, 154, 184, 0.2);
+}
+
+.book-btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.services{
+  height: 50vh;
+  width: 100vw;
+  background-color: white;
+}
+
+
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-card img {
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover img {
+  transform: scale(1.1);
+}
+
