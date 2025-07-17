@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarApp from './Components/NavbarApp'
 import HeroSection from './Components/HeroSection';
 import Services from './Components/Services';
+import MostBooked from './Components/MostBooked';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
      <NavbarApp/>
      <HeroSection/>
      <Services/>
+     <MostBooked/>
     </>
   )
 }

@@ -69,9 +69,10 @@ function HeroSection() {
         <div className="input-group rounded-pill bg-body-tertiary px-3 py-2 align-items-center">
           <FaStar className="text-purple me-2 fs-5" />
           <select className="form-select border-0 bg-transparent p-0 shadow-none focus:outline-none" style={{ fontSize: '15px' }}>
-            <option>Top Rated</option>
-            <option>4+ Stars</option>
-            <option>3+ Stars</option>
+            <option>★★★★★</option>
+            <option>★★★★</option>
+            <option>★★★</option>
+            <option>★★</option>
           </select>
         </div>
       </div>
