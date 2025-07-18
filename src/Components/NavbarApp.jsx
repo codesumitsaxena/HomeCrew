@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import '../App.css';
 
@@ -17,7 +18,7 @@ function NavbarApp() {
             <Nav.Link href="#home" className="custom-link">Home</Nav.Link>
             <Nav.Link href="#services" className="custom-link">Services</Nav.Link>
             <Nav.Link href="#about" className="custom-link">About</Nav.Link>
-            <Nav.Link href="#contact" className="custom-link">Contact</Nav.Link>
+            <Nav.Link as={Link} to="/service/1" className="custom-link">Contact</Nav.Link>
 
             <Button className="book-btn  ms-lg-3 mt-3 mt-lg-0">
               Book a Service

@@ -164,3 +164,6 @@ body {
   background-color: #8a6ff2;
 }
 
+.cardMoreData{
+  background: linear-gradient(90deg, #fdf6f0, #e9e9ff); 
+}
