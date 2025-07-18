@@ -19,7 +19,7 @@ import {
 
 function Footer() {
   return (
-    <footer className="bg-light text-dark pt-5 pb-4" style={{ fontSize: "16px" }}>
+    <footer className="bg-[#] text-dark pt-5 pb-4" style={{ fontSize: "16px" }}>
       <Container>
         <Row className="mb-5">
           <Col md={3}>

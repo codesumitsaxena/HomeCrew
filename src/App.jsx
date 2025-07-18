@@ -5,7 +5,10 @@ import HeroSection from './Components/HeroSection';
 import Services from './Components/Services';
 import MostBooked from './Components/MostBooked';
 import Footer from './Components/Footer';
+import Whoweare from './Components/Whoweare';
 import InsideCard from './Components/InsideCard';
+import Ourproces from './Components/Ourproces'
+import Testimonials from './Components/Testimonials'
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
               <HeroSection />
               <Services />
               <MostBooked />
+              <Whoweare/>
+              <Ourproces/>
+<Testimonials/>
               <Footer />
             </>
           }
