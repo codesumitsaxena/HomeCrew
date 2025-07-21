@@ -85,7 +85,7 @@ function Services() {
   ];
 
   return (
-    <div className="container-fluid bg-light py-5">
+    <div className="container-fluid py-5" style={{backgroundColor: '#f9f7f3'}}>
         <div className="container">
       <h3 className='py-2 serviceHeading' style={{ marginBottom: "24px", fontWeight: "600" }}>
         Explore Popular Services

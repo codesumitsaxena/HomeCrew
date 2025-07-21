@@ -1,7 +1,6 @@
 import React from 'react';
 import { FaUserShield, FaClock, FaTools, FaThumbsUp } from "react-icons/fa";
-import ServiceImg from '../assets/whoweareImg.jpg'; // 🖼️ Replace with your image path
-
+import ServiceImg from '../assets/whoweareImg.jpg'; 
 function Whoweare() {
   return (
     <div
@@ -11,7 +10,6 @@ function Whoweare() {
       <div className="container">
         <div className="row align-items-center g-5">
 
-          {/* Left Side - Image */}
           <div className="col-lg-6 d-flex justify-content-center">
             <img
               src={ServiceImg}
