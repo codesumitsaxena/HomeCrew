@@ -339,3 +339,25 @@ input:focus,
   position: relative;
   z-index: 2;
 }
+
+element.style {
+  color: rgb(6, 6, 6);
+}
+
+
+.rdrSelected , .rdrDayStartPreview {
+    color: rgb(6, 6, 6) !important;
+  
+}
+
+.rdrDayToday .rdrDayNumber span::after{
+  background-color: black !important;
+}
+
+.DateCalendra{
+  height: 330px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

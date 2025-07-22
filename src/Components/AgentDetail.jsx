@@ -12,6 +12,7 @@ import FaqaImg from '../assets/Faq.jpg'
 import Footer from './Footer'
 import BookNow from './BookNow'
 import ServiceDate from './ServiceDate'
+import SuggestionsSlider from './Suggestion'
 
 
 function AgentDetail() {
@@ -217,6 +218,7 @@ function AgentDetail() {
 </div>
 
       </div>
+      <SuggestionsSlider/>
       <Footer/>
     </div>
     

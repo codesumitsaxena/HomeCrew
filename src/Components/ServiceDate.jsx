@@ -1,45 +1,36 @@
-import React, { useState } from "react"
-import DatePicker from "react-datepicker"
-import "react-datepicker/dist/react-datepicker.css"
-import { addDays, isWeekend } from "date-fns"
+import React, { useState } from 'react';
+import { Calendar } from 'react-date-range';
+import 'react-date-range/dist/styles.css'; // main css
+import 'react-date-range/dist/theme/default.css'; // theme css
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function ServiceDate() {
-  const [selectedDate, setSelectedDate] = useState(null)
-  const today = new Date()
-  const disabledDates = [
-    today,
-    addDays(today, 14),
-    addDays(today, 23)
-  ]
+  const [date, setDate] = useState(new Date());
 
-  const isDisabled = (date) => {
-    const isManualBlock = disabledDates.some(
-      (d) => d.toDateString() === date.toDateString()
-    )
-    return isWeekend(date) || isManualBlock
-  }
+  const handleChange = (date) => {
+    console.log("Selected date:", date);
+    setDate(date);
+  };
 
   return (
-    <div className="border p-3 rounded shadow-sm">
-      <h5 className="mb-3 text-center">📅 Select a date</h5>
-
-      <DatePicker
-        inline
-        selected={selectedDate}
-        onChange={(date) => setSelectedDate(date)}
-        minDate={today}
-        filterDate={(date) => !isDisabled(date)}
-        calendarClassName="w-100"
-      />
-
-      <div className="text-center mt-3">
-        <button className="btn btn-primary w-100">
-          Book Now
-        </button>
+    <div className="container my-4">
+    <h5 className="mb-3">Select a Date</h5>
+    <div
+      className="border shadow rounded d-flex flex-column align-items-center overflow-hidden"
+      style={{ maxWidth: "fit-content" }}
+    >
+      <div style={{ borderBottom: "1px solid #dee2e6", width: "100%" }}>
+        <Calendar date={date} onChange={handleChange} />
       </div>
+      <button
+        className="btn btn-dark px-4 py-2 w-100 rounded-0 border-0"
+        style={{ borderTop: "none" }}
+      >
+        Book Service
+      </button>
     </div>
-  )
+  </div>
+  );
 }
-
 
 export default ServiceDate;

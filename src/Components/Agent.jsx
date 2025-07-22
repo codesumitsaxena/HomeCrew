@@ -1,116 +1,121 @@
-import React from 'react';
+import React, { useRef } from "react";
 
-const agents = [
+const suggestions = [
   {
-    name: "Rahul Sharma",
-    role: "Chimney Cleaning Expert",
-    rating: "4.86",
-    time: "45 mins",
-    price: 799,
-    desc: "Expert in deep chimney cleaning for homes and restaurants. Uses tools.",
-    image: "https://randomuser.me/api/portraits/men/11.jpg",
+    name: "Sahil Mehra",
+    role: "AC Repair",
+    rating: "4.82",
+    time: "40 mins",
+    price: 699,
+    desc: "Quick AC checkup, gas refill, & filter cleaning at your doorstep.",
+    image: "https://randomuser.me/api/portraits/men/21.jpg",
   },
   {
-    name: "Priya Singh",
-    role: "Electrician",
+    name: "Tanvi Kapoor",
+    role: "Pest Control",
     rating: "4.9",
-    time: "30 mins",
-    price: 499,
-    desc: "Specialist in residential electrical repair and wiring safety.",
-    image: "https://randomuser.me/api/portraits/women/12.jpg",
+    time: "50 mins",
+    price: 899,
+    desc: "Anti-cockroach, termite, and mosquito treatment expert.",
+    image: "https://randomuser.me/api/portraits/women/22.jpg",
   },
   {
-    name: "Ankit Verma",
-    role: "AC Repair Technician",
+    name: "Deepak Rawat",
+    role: "Washing Machine Repair",
     rating: "4.7",
     time: "60 mins",
-    price: 999,
-    desc: "Quick AC service, refilling, and maintenance at doorstep.",
-    image: "https://randomuser.me/api/portraits/men/13.jpg",
+    price: 799,
+    desc: "Motor, pipe & sensor repair for semi/fully automatic machines.",
+    image: "https://randomuser.me/api/portraits/men/23.jpg",
   },
   {
-    name: "Neha Rana",
-    role: "Salon at Home",
-    rating: "4.8",
+    name: "Meena Joshi",
+    role: "Home Sanitization",
+    rating: "4.85",
     time: "90 mins",
     price: 1199,
-    desc: "Bridal & party makeup, facial, waxing. Home salon expert.",
-    image: "https://randomuser.me/api/portraits/women/14.jpg",
+    desc: "Full home sanitization with hospital-grade disinfectants.",
+    image: "https://randomuser.me/api/portraits/women/24.jpg",
   },
   {
-    name: "Ravi Tripathi",
-    role: "Plumber",
-    rating: "4.5",
-    time: "35 mins",
-    price: 399,
-    desc: "Leakage repair, tap fitting, and bathroom installation expert.",
-    image: "https://randomuser.me/api/portraits/men/15.jpg",
-  },
-  {
-    name: "Ayesha Khan",
-    role: "Home Cleaning",
-    rating: "4.95",
-    time: "2 hrs",
-    price: 1499,
-    desc: "Deep kitchen, bathroom, and full-home cleaning expert.",
-    image: "https://randomuser.me/api/portraits/women/16.jpg",
+    name: "Abhay Singh",
+    role: "Carpenter",
+    rating: "4.6",
+    time: "45 mins",
+    price: 499,
+    desc: "Furniture repair, door hinge fixing, and woodwork service.",
+    image: "https://randomuser.me/api/portraits/men/25.jpg",
   },
 ];
 
-function Agent() {
+function SuggestionsForYou() {
+  const scrollRef = useRef(null);
+
+  const scrollRight = () => {
+    scrollRef.current.scrollLeft += 300;
+  };
+
   return (
-    <div className="container">
-      <div className="row gy-4 my-4">
-        {agents.map((agent, index) => (
-          <div className="col-md-6 col-xl-4" key={index}>
-            <div className="card shadow rounded-4 border-0 h-100">
-              <div className="position-relative">
-                <img
-                  src={agent.image}
-                  alt={agent.name}
-                  className="card-img-top rounded-top-4"
-                  style={{ height: "220px", objectFit: "cover" }}
-                />
-                <button
-                  className="btn position-absolute top-0 end-0 m-3 rounded-circle shadow"
-                  style={{
-                    backgroundColor: "#7D4CDB",
-                    color: "white",
-                    fontWeight: "bold",
-                  }}
-                >
-                  <i className="bi bi-plus-lg"></i>
-                </button>
+    <div className="container mt-5">
+      <div className="d-flex justify-content-between align-items-center mb-3">
+        <h4 className="fw-bold">Suggestions for you</h4>
+        <button
+          className="btn btn-light rounded-circle shadow-sm"
+          onClick={scrollRight}
+        >
+          <i className="bi bi-arrow-right fs-5"></i>
+        </button>
+      </div>
+
+      <div
+        className="d-flex gap-3 overflow-auto pb-2 slider-container"
+        ref={scrollRef}
+      >
+        {suggestions.map((sugg, index) => (
+          <div
+            key={index}
+            className="card shadow-sm border-0 rounded-4"
+            style={{ width: "260px", flex: "0 0 auto" }}
+          >
+            <div className="position-relative">
+              <img
+                src={sugg.image}
+                alt={sugg.name}
+                className="card-img-top rounded-top-4"
+                style={{ height: "180px", objectFit: "cover" }}
+              />
+              <button
+                className="btn position-absolute top-0 end-0 m-2 rounded-circle shadow"
+                style={{
+                  backgroundColor: "#7D4CDB",
+                  color: "white",
+                  fontWeight: "bold",
+                }}
+              >
+                <i className="bi bi-plus-lg"></i>
+              </button>
+            </div>
+            <div className="card-body px-3 py-3">
+              <h6 className="fw-bold mb-1">{sugg.name}</h6>
+              <p className="text-muted small mb-2">{sugg.role}</p>
+
+              <div className="d-flex justify-content-between mb-1">
+                <div className="text-warning small">
+                  ★ <span className="fw-bold text-dark">{sugg.rating}</span>
+                </div>
+                <div className="small text-muted">{sugg.time}</div>
               </div>
 
-              <div className="card-body px-3 py-3">
-                <h5 className="fw-bold mb-1">{agent.name}</h5>
-                <p className="text-muted mb-2">{agent.role}</p>
+              <p className="small text-secondary mb-2">{sugg.desc}</p>
 
-                <div className="d-flex align-items-center justify-content-between mb-2">
-                  <div>
-                    <span className="text-warning">★</span>
-                    <span className="fw-bold ms-1 me-2">{agent.rating}</span>
-                    <span className="text-muted small">{agent.time}</span>
-                  </div>
-                  <span className="fw-semibold text-success">₹{agent.price}</span>
-                </div>
-
-                <p className="text-secondary small mb-3">{agent.desc}</p>
-
-                <div className="d-flex justify-content-between">
-                  <button
-                    className="btn btn-outline-dark px-3 rounded-pill fw-semibold"
-                  >
-                    View Profile
-                  </button>
-                  <button
-                    className="btn btn-primary px-4 rounded-pill fw-semibold"
-                    style={{ backgroundColor: "#7D4CDB", border: "none" }}
-                  >
-                    Book Now
-                  </button>
-                </div>
+              <div className="d-flex justify-content-between align-items-center">
+                <span className="fw-semibold text-success small">₹{sugg.price}</span>
+                <button
+                  className="btn btn-sm btn-primary rounded-pill fw-semibold"
+                  style={{ backgroundColor: "#7D4CDB", border: "none" }}
+                >
+                  Book
+                </button>
               </div>
             </div>
           </div>
@@ -120,4 +125,4 @@ function Agent() {
   );
 }
 
-export default Agent;
+export default SuggestionsForYou;

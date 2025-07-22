@@ -85,67 +85,55 @@ function Services() {
   ];
 
   return (
-    <div className="container-fluid py-5" style={{backgroundColor: '#f9f7f3'}}>
-        <div className="container">
-      <h3 className='py-2 serviceHeading' style={{ marginBottom: "24px", fontWeight: "600" }}>
-        Explore Popular Services
-      </h3>
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "20px",
-          justifyContent: "flex-start",
-        }}
-      >
-        {services.map((service) => (
-          <div
-            key={service.id}
-            style={{
-              width: "18.2%", 
-              backgroundColor: "#fff",
-              padding: "16px",
-              borderRadius: "12px",
-              boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "flex-start",
-            }}
-            className='cardContainer'
-          >
-            <div
-              style={{
-                backgroundColor: service.bgColor,
-                borderRadius: "50%",
-                padding: "12px",
-                marginBottom: "12px",
-              }}
-              
-            >
-              <img
-                src={service.image}
-                alt={service.title}
-                style={{ height: "30px", width: "30px" }}
-              />
-            </div>
-            <h4
-              style={{
-                fontSize: "16px",
-                marginBottom: "6px",
-                fontWeight: "600",
-              }}
-            >
-              {service.title}
-            </h4>
-            <p style={{ fontSize: "14px", color: "#666", margin: 0 }}>
-              {service.desc}
-            </p>
-          </div>
-        ))}
-      </div>
-      </div>
+    <div className="container-fluid py-5" style={{ backgroundColor: "#f9f7f3" }}>
+  <div className="container">
+    <h3 className="py-2 mb-4 fw-semibold serviceHeading">
+      Explore Popular Services
+    </h3>
 
+    <div className="d-flex flex-wrap justify-content-start gap-3">
+      {services.map((service) => (
+        <div
+          key={service.id}
+          className="cardContainer"
+          style={{
+            width: "calc(20% - 16px)", // 5 cards in one row
+            backgroundColor: "#fff",
+            padding: "16px",
+            borderRadius: "12px",
+            boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-start",
+          }}
+        >
+          <div
+            className="mb-3 d-flex align-items-center justify-content-center"
+            style={{
+              backgroundColor: service.bgColor,
+              borderRadius: "50%",
+              width: "48px",
+              height: "48px",
+            }}
+          >
+            <img
+              src={service.image}
+              alt={service.title}
+              style={{ height: "30px", width: "30px" }}
+            />
+          </div>
+          <h5 className="fw-semibold mb-1" style={{ fontSize: "15px" }}>
+            {service.title}
+          </h5>
+          <p className="mb-0 text-muted" style={{ fontSize: "13px" }}>
+            {service.desc}
+          </p>
+        </div>
+      ))}
     </div>
+  </div>
+</div>
+
   );
 }
 
