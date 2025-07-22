@@ -7,9 +7,10 @@ import Services from './Components/Services';
 import MostBooked from './Components/MostBooked';
 import Footer from './Components/Footer';
 import Whoweare from './Components/Whoweare';
-import InsideCard from './Components/insideCard';
+import InsideCard from './Components/InsideCard';
 import Ourproces from './Components/Ourproces'
 import Testimonials from './Components/Testimonials'
+import AgentDetail from './Components/AgentDetail';
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
           }
         />
         <Route path="/service/:id" element={<InsideCard />} />
+        <Route path="/AgentDetail/:id" element={<AgentDetail />} />
+
       </Routes>
     </Router>
   );

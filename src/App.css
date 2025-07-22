@@ -284,3 +284,58 @@ input:focus,
   outline: none !important;
   border-color: #ced4da; 
 }
+
+.AccordianContainer{
+ border-radius: 20px !important;
+}
+
+.AccordianContainer .accordion-button:focus {
+  outline: none !important; /* Remove blue outline */
+  box-shadow: none !important; /* Remove focus shadow */
+  border-color: transparent !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  color: inherit !important;
+}
+
+.accordionHeading{
+  font-size: 1.1rem
+}
+
+.FaqImg{
+  height: 78vh;
+  border-radius: 20px !important;
+  
+}
+
+.hero-section {
+  background-image: url('./assets/ServiceImg.jpg'); /* replace with your image path */
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 38%;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
+  z-index: 1;
+
+}
+
+
+/* Ensure content appears above the blur */
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}

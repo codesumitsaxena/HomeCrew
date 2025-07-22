@@ -13,7 +13,6 @@ function InsideCard() {
     availability: "",
   });
 
-  // Options
   const sortOptions = [
     { value: "", label: "Select" },
     { value: "priceLow", label: "Price: Low to High" },
