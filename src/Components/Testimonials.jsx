@@ -91,9 +91,9 @@ function Testimonials() {
   return (
     <div className="bg-light py-5 overflow-hidden">
       <div className="container">
-        <h3 className="mb-4 fs-1 fw-bold">What <span style={{color:"#8a6ff2"}}>our clients </span>,<br/><span style={{color:"#8a6ff2"}}>say about</span>our work</h3>
+        <h3 className="m-0 fs-1 fw-bold">What <span style={{color:"#8a6ff2"}}>our clients </span>,<br/><span style={{color:"#8a6ff2"}}>say about</span>our work</h3>
 
-        <div className="d-flex flex-nowrap gap-4 scroll-animation">
+        <div className="d-flex flex-nowrap mt-3 gap-4 scroll-animation">
           {testimonials.map((item, index) => (
             <div
               className="bg-white border rounded-4 shadow-sm p-3 flex-shrink-0"

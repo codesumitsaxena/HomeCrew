@@ -87,9 +87,8 @@ function Services() {
   return (
     <div className="container-fluid py-5" style={{ backgroundColor: "#f9f7f3" }}>
   <div className="container">
-    <h3 className="py-2 mb-4 fw-semibold serviceHeading">
-      Explore Popular Services
-    </h3>
+    <h3 className="py-2 mb-4 fw-semibold serviceHeading">Explore Popular  <span style={{color:"#8a6ff2"}}>Services</span>,</h3>
+
 
     <div className="d-flex flex-wrap justify-content-start gap-3">
       {services.map((service) => (

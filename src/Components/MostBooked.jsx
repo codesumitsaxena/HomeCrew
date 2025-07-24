@@ -51,7 +51,7 @@ function MostBooked() {
         }}
       >
         <div className="container">
-          <h3 className="fw-semibold text-center fs-4">Most Booked Services</h3>
+          <h3 className="fw-semibold text-center fs-4">Most <span style={{color:"#8a6ff2"}}>Booked Services</span>,</h3>
           <p className="text-center text-muted mb-4 fs-6">
             Trusted by thousands across India. Get quick and reliable service at
             your doorstep.

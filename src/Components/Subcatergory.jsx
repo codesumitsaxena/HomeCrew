@@ -19,21 +19,27 @@ const subCategories = [
 function Subcatergory() {
   return (
     <div>
-      <h5 className="fw-bold mb-3">Subcategories</h5>
+      <h3 className="fw-bold mb-3 fs-5 fs-md-4">Subcategories</h3>
       <div className="bg-white p-3 rounded shadow-sm">
         <div className="row">
           {subCategories.map((item, index) => (
-            <div className="col-6 mb-4" key={index}>
-              <Card className="p-2 card-caterogy border-0 rounded-4 h-100 text-center">
+            <div className="col-6 col-md-6 col-sm-6 col-lg-6 mb-4" key={index}>
+              <Card className="p-2 border-0 rounded-4 h-100 text-center">
                 <Card.Img
                   variant="top"
                   src={item.image}
                   alt={item.title}
                   className="img-fluid rounded mb-2"
-                  style={{ height: '100px', objectFit: 'cover' }}
+                  style={{
+                    height: "80px",
+                    objectFit: "cover",
+                  }}
                 />
                 <Card.Body className="p-1">
-                  <Card.Title as="h6" className="fw-semibold mb-0">
+                  <Card.Title
+                    as="h6"
+                    className="fw-semibold mb-0 fs-6 fs-md-6 fs-lg-5"
+                  >
                     {item.title}
                   </Card.Title>
                 </Card.Body>
@@ -45,6 +51,5 @@ function Subcatergory() {
     </div>
   );
 }
-
 
 export default Subcatergory;

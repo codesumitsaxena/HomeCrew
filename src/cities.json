@@ -1,0 +1,130 @@
+[
+  {
+    "name": "Mumbai",
+    "areas": ["Andheri", "Bandra", "Borivali", "Dadar", "Powai"]
+  },
+  {
+    "name": "Delhi",
+    "areas": ["Connaught Place", "Saket", "Dwarka", "Karol Bagh", "Rohini"]
+  },
+  {
+    "name": "Bangalore",
+    "areas": [
+      "Whitefield",
+      "Koramangala",
+      "Indiranagar",
+      "Jayanagar",
+      "HSR Layout"
+    ]
+  },
+  {
+    "name": "Hyderabad",
+    "areas": [
+      "Banjara Hills",
+      "Gachibowli",
+      "Madhapur",
+      "Begumpet",
+      "Kukatpally"
+    ]
+  },
+  {
+    "name": "Ahmedabad",
+    "areas": [
+      "Navrangpura",
+      "Satellite",
+      "SG Highway",
+      "Maninagar",
+      "Vastrapur"
+    ]
+  },
+  {
+    "name": "Pune",
+    "areas": ["Hinjewadi", "Kothrud", "Baner", "Viman Nagar", "Wakad"]
+  },
+  {
+    "name": "Chennai",
+    "areas": ["T. Nagar", "Velachery", "Anna Nagar", "Adyar", "OMR"]
+  },
+  {
+    "name": "Kolkata",
+    "areas": ["Salt Lake", "Park Street", "Gariahat", "Behala", "New Town"]
+  },
+  {
+    "name": "Jaipur",
+    "areas": [
+      "Malviya Nagar",
+      "Vaishali Nagar",
+      "C-Scheme",
+      "Mansarovar",
+      "Jagatpura"
+    ]
+  },
+  {
+    "name": "Lucknow",
+    "areas": [
+      "Gomti Nagar",
+      "Hazratganj",
+      "Indira Nagar",
+      "Alambagh",
+      "Rajajipuram"
+    ]
+  },
+  {
+    "name": "Chandigarh",
+    "areas": ["Sector 17", "Sector 22", "Sector 35", "Manimajra", "Mohali"]
+  },
+  {
+    "name": "Indore",
+    "areas": ["Vijay Nagar", "Palasia", "Rau", "Rajwada", "Bhawarkua"]
+  },
+  {
+    "name": "Surat",
+    "areas": ["Adajan", "Vesu", "Citylight", "Katargam", "Varachha"]
+  },
+  {
+    "name": "Bhopal",
+    "areas": ["Arera Colony", "MP Nagar", "Kolar", "Shyamla Hills", "TT Nagar"]
+  },
+  {
+    "name": "Nagpur",
+    "areas": ["Dharampeth", "Civil Lines", "Sitabuldi", "Wardha Road", "Sadar"]
+  },
+  {
+    "name": "Noida",
+    "areas": ["Sector 18", "Sector 62", "Sector 137", "Sector 15", "Sector 76"]
+  },
+  {
+    "name": "Gurgaon",
+    "areas": [
+      "DLF Phase 1",
+      "DLF Phase 3",
+      "Sohna Road",
+      "MG Road",
+      "Sector 56"
+    ]
+  },
+  {
+    "name": "Thane",
+    "areas": ["Ghodbunder Road", "Vartak Nagar", "Kopri", "Majiwada", "Kalwa"]
+  },
+  {
+    "name": "Patna",
+    "areas": [
+      "Kankarbagh",
+      "Boring Road",
+      "Rajendra Nagar",
+      "Fraser Road",
+      "Bailey Road"
+    ]
+  },
+  {
+    "name": "Coimbatore",
+    "areas": [
+      "RS Puram",
+      "Gandhipuram",
+      "Peelamedu",
+      "Saibaba Colony",
+      "Avinashi Road"
+    ]
+  }
+]

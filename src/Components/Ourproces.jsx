@@ -8,9 +8,7 @@ function Ourproces() {
 
         <div className="row mb-4">
           <div className="d-flex justify-content-between align-items-center">
-            <h3 className="fw-bold text-dark m-0">
-              Our Process is <br /> Simple and Effective
-            </h3>
+            <h3 className="fw-bold text-dark m-0">Our Process <span style={{color:"#8a6ff2"}}>is</span>,<br/><span style={{color:"#8a6ff2"}}>Simple and </span>Effective</h3>
             <button
               className="btn rounded-pill px-4 py-2 text-white"
               style={{ backgroundColor: '#A78BFA', border: 'none' }}
