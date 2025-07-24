@@ -139,102 +139,90 @@ function SuggestionsForYou() {
 
   return (
     <div className="container my-5 position-relative">
-      <h4 className="fw-bold mb-4">Suggestions for you</h4>
-
-      {/* Arrows */}
+  {/* Heading and Arrows Row */}
+  <div className="d-flex justify-content-between align-items-center mb-3">
+    <h4 className="fw-bold mb-0">Suggestions for you</h4>
+    <div className="d-flex gap-2">
       <button
         onClick={() => scroll("left")}
-        className="btn btn-light shadow position-absolute top-50 start-0 translate-middle-y z-3"
-        style={{
-          width: "40px",
-          height: "40px",
-          borderRadius: "50%",
-        }}
+        className="btn btn-light shadow-sm rounded-circle"
+        style={{ width: "36px", height: "36px" }}
       >
         <i className="bi bi-arrow-left"></i>
       </button>
-
       <button
         onClick={() => scroll("right")}
-        className="btn btn-light shadow position-absolute top-50 end-0 translate-middle-y z-3"
-        style={{
-          width: "40px",
-          height: "40px",
-          borderRadius: "50%",
-        }}
+        className="btn btn-light shadow-sm rounded-circle"
+        style={{ width: "36px", height: "36px" }}
       >
         <i className="bi bi-arrow-right"></i>
       </button>
-
-      <div
-        className="d-flex gap-3 overflow-auto pb-2 px-2"
-        style={{
-          scrollBehavior: "smooth",
-          scrollbarWidth: "none", // Firefox
-          msOverflowStyle: "none", // IE/Edge
-        }}
-        ref={scrollRef}
-      >
-        {suggestions.map((sugg, index) => (
-          <a
-            href={sugg.link}
-            key={index}
-            className="card shadow-sm border-0 rounded-4 text-decoration-none text-dark"
-            style={{
-              width: "260px",
-              flex: "0 0 auto",
-              cursor: "pointer",
-              minHeight: "100%",
-            }}
-          >
-            <div className="position-relative">
-              <img
-                src={sugg.image}
-                alt={sugg.name}
-                className="card-img-top rounded-top-4"
-                style={{ height: "180px", objectFit: "cover" }}
-              />
-              {/* <span
-                className="badge bg-danger position-absolute top-0 start-0 m-2"
-                style={{ fontSize: "0.75rem" }}
-              >
-                {sugg.offer}
-              </span> */}
-            </div>
-            <div className="card-body px-3 py-3 d-flex flex-column justify-content-between">
-              <div>
-                <h6 className="fw-bold mb-1">{sugg.role}</h6>
-                <p className="text-muted small mb-2">{sugg.name}</p>
-                <div className="d-flex justify-content-between mb-1">
-                  <div className="text-warning small">
-                    ★ <span className="fw-bold text-dark">{sugg.rating}</span>
-                  </div>
-                  <div className="small text-muted">{sugg.time}</div>
-                </div>
-                <p className="small text-secondary mb-2">{sugg.desc}</p>
-              </div>
-
-              <div className="d-flex justify-content-between align-items-center mt-2">
-                <span className="fw-semibold text-success small">
-                  ₹{sugg.price}
-                </span>
-                <span
-                  className="btn btn-sm rounded-pill fw-semibold"
-                  style={{
-                    fontSize: "0.75rem",
-                    backgroundColor: "#F3F0FF",
-                    color: "#7D4CDB",
-                    border: "1px solid #D0C3F6",
-                  }}
-                >
-                  {sugg.offer}
-                </span>
-              </div>
-            </div>
-          </a>
-        ))}
-      </div>
     </div>
+  </div>
+
+  {/* Suggestions Scrollable Cards */}
+  <div
+    className="d-flex gap-3 overflow-auto pb-2 px-2"
+    style={{
+      scrollBehavior: "smooth",
+      scrollbarWidth: "none",
+      msOverflowStyle: "none",
+    }}
+    ref={scrollRef}
+  >
+    {suggestions.map((sugg, index) => (
+      <a
+        href={sugg.link}
+        key={index}
+        className="card shadow-sm border-0 rounded-4 text-decoration-none text-dark"
+        style={{
+          width: "260px",
+          flex: "0 0 auto",
+          cursor: "pointer",
+        }}
+      >
+        <div className="position-relative">
+          <img
+            src={sugg.image}
+            alt={sugg.name}
+            className="card-img-top rounded-top-4"
+            style={{ height: "180px", objectFit: "cover" }}
+          />
+        </div>
+        <div className="card-body px-3 py-3 d-flex flex-column justify-content-between">
+          <div>
+            <h6 className="fw-bold mb-1">{sugg.role}</h6>
+            <p className="text-muted small mb-2">{sugg.name}</p>
+            <div className="d-flex justify-content-between mb-1">
+              <div className="text-warning small">
+                ★ <span className="fw-bold text-dark">{sugg.rating}</span>
+              </div>
+              <div className="small text-muted">{sugg.time}</div>
+            </div>
+            <p className="small text-secondary mb-2">{sugg.desc}</p>
+          </div>
+          <div className="d-flex justify-content-between align-items-center mt-2">
+            <span className="fw-semibold text-success small">
+              ₹{sugg.price}
+            </span>
+            <span
+              className="btn btn-sm rounded-pill fw-semibold"
+              style={{
+                fontSize: "0.75rem",
+                backgroundColor: "#F3F0FF",
+                color: "#7D4CDB",
+                border: "1px solid #D0C3F6",
+              }}
+            >
+              {sugg.offer}
+            </span>
+          </div>
+        </div>
+      </a>
+    ))}
+  </div>
+</div>
+
   );
 }
 
