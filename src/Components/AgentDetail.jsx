@@ -160,33 +160,41 @@ function AgentDetail() {
   </div>
 </div>
 
-    <div className="container py-5">
-      <div className="row justify-content-center">
-        <div className="col-lg-8">
-          <h3 className="mb-4 fw-bold">Services Offered</h3>
-          <div className="row g-3">
-            {services.map((service, index) => (
-              <div className="col-md-4" key={index}>
-                <div
-                  className="p-4 rounded shadow"
-                  style={{ backgroundColor: service.bgColor }}
-                >
-                  <div style={{ fontWeight: 'bold', fontSize: '1.1rem' }}>
-                    {service.title}
-                  </div>
-                  <div style={{ fontSize: '0.95rem', marginTop: '4px' }}>
-                    {service.description}
-                  </div>
-                </div>
+<div className="container py-5">
+  <div className="row justify-content-center">
+    <div className="col-lg-8">
+      <h3 className="mb-4 fs-1 fw-bold">Services <span style={{color:"#8a6ff2"}}>offered</span></h3>
+
+      <div className="row g-3">
+        {services.map((service, index) => (
+          <div className="col-md-4 d-flex" key={index}>
+            <div
+              className="p-4 rounded shadow flex-fill"
+              style={{
+                backgroundColor: service.bgColor,
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                minHeight: "140px", 
+              }}
+            >
+              <div style={{ fontWeight: "bold", fontSize: "1.1rem" }}>
+                {service.title}
               </div>
-            ))}
+              <div
+                style={{ fontSize: "0.95rem", marginTop: "4px", flexGrow: 1 }}
+              >
+                {service.description}
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="col-lg-4">
-            
-        </div>
+        ))}
       </div>
     </div>
+    <div className="col-lg-4"></div>
+  </div>
+</div>
+
     <HowitsWorkAgent/>
     <BookNow/>
     <Testimonails/>

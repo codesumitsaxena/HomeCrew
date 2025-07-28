@@ -38,7 +38,6 @@ function HowitsWorkAgent() {
     <>
       <div className="container-fluid howitworks-section py-5" style={{ backgroundColor: '#f9f7f3'}}>
         <div className="container">
-        {/* Heading Row */}
         <div className="row align-items-center justify-content-between">
           <div className="col-12 col-md-5 mb-4 mb-md-0">
            

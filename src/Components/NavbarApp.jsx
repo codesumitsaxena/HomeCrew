@@ -20,8 +20,8 @@ function NavbarApp() {
             <Nav.Link as={Link} to="/AgentDetail/1" className="custom-link">About</Nav.Link>
             <Nav.Link as={Link} to="/service/1" className="custom-link">Contact</Nav.Link>
 
-            <Button className="book-btn  ms-lg-3 mt-3 mt-lg-0">
-              Book a Service
+            <Button as={Link} to="/login" className="book-btn  ms-lg-3 fw-bold mt-3 mt-lg-0">
+              Account
             </Button>
           </Nav>
         </Navbar.Collapse>
