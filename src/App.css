@@ -344,3 +344,7 @@ element.style {
 .loginFormHeader{
   height: 90vh;
 }
+
+.LoginFormImg{
+  border-radius: 25px !important;
+}

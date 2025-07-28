@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import HeroImg from "../assets/LoginFormImg.jpg";
+import LoginFormImg from "../assets/LoginFormImg.jpg";
 
 function Signup() {
   return (
@@ -13,9 +13,9 @@ function Signup() {
           className="d-none d-lg-flex align-items-center justify-content-center"
         >
           <img
-            src={HeroImg}
+            src={LoginFormImg}
             alt="Home Services"
-            className="img-fluid ps-4 rounded"
+            className="img-fluid shadow ms-5 rounded"
           />
         </Col>
 
