@@ -80,10 +80,9 @@ const customStyles = {
   indicatorSeparator: () => ({ display: 'none' }),
 };
 
-function HeroSection() {
+function HeroSection() {7
   const [location, setLocation] = useState('');
   const [suggestions, setSuggestions] = useState([]);
-
   const handleLocationChange = (e) => {
     const value = e.target.value;
     setLocation(value);
@@ -106,8 +105,8 @@ function HeroSection() {
       <Container className="pt-2">
         <Row className="align-items-center">
           <Col lg={6}>
-            <h1 className="display-5 fw-bold text-dark">
-              Reliable Home Services,<br />Delivered to Your Doorstep.
+            <h1 className="display-6 fw-bold text-dark">
+              Reliable Home Services,<br />Delivered to Your <br/>Doorstep.
             </h1>
             <p className="text-muted mt-3" style={{ fontSize: '1.1rem' }}>
               From beauty and wellness to repairs and deep cleaning, book trusted professionals in just a few clicks.
@@ -124,7 +123,7 @@ function HeroSection() {
         </Row>
       </Container>
 
-      <Container className="mt-5 mb-5 position-relative">
+      <Container className="mt-3 mb-5 position-relative">
         <div className="bg-white py-4 px-3 px-md-5 rounded-4 shadow-lg">
           <Row className="g-3 align-items-center">
 
