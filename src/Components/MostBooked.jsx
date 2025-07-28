@@ -81,7 +81,7 @@ function MostBooked() {
                   </div>
                   <div className="d-flex align-items-center justify-content-between mt-3 px-0">
                     <button className="btn btn-dark fw-semibold rounded-pill px-3 py-2 flex-grow-1">
-                      Book Now +
+                      Book Now  <i class="bi fw-bold bi-cart"></i>
                     </button>
                     <button
                       className="btn border-0 d-flex align-items-center justify-content-center rounded-circle ms-2"

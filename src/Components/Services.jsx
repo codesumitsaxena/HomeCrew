@@ -85,53 +85,60 @@ function Services() {
   ];
 
   return (
-    <div className="container-fluid py-5" style={{ backgroundColor: "#f9f7f3" }}>
+<div className="container-fluid py-5" style={{ backgroundColor: "#f9f7f3" }}>
   <div className="container">
-    <h3 className="py-2 mb-4 fw-semibold serviceHeading">Explore Popular  <span style={{color:"#8a6ff2"}}>Services</span>,</h3>
+    <h3 className="py-2 mb-4 fw-semibold serviceHeading">
+      Explore Popular <span style={{ color: "#8a6ff2" }}>Services</span>,
+    </h3>
 
-
-    <div className="d-flex flex-wrap justify-content-start gap-3">
+    <div className="row g-3">
       {services.map((service) => (
         <div
           key={service.id}
-          className="cardContainer"
-          style={{
-            width: "calc(20% - 16px)", 
-            backgroundColor: "#fff",
-            padding: "16px",
-            borderRadius: "12px",
-            boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-start",
-          }}
+          className="col-6 col-sm-4 col-md-3 col-lg-2-4" // grid column
         >
           <div
-            className="mb-3 d-flex align-items-center justify-content-center"
+            className="cardContainer"
             style={{
-              backgroundColor: service.bgColor,
-              borderRadius: "50%",
-              width: "48px",
-              height: "48px",
+              backgroundColor: "#fff",
+              padding: "16px",
+              borderRadius: "12px",
+              boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              height: "100%", // maintain equal height
             }}
           >
-            <img
-              src={service.image}
-              alt={service.title}
-              style={{ height: "30px", width: "30px" }}
-            />
+            <div
+              className="mb-3 d-flex align-items-center justify-content-center"
+              style={{
+                backgroundColor: service.bgColor,
+                borderRadius: "50%",
+                width: "48px",
+                height: "48px",
+              }}
+            >
+              <img
+                src={service.image}
+                alt={service.title}
+                style={{ height: "30px", width: "30px" }}
+              />
+            </div>
+            <h5 className="fw-semibold mb-1" style={{ fontSize: "15px" }}>
+              {service.title}
+            </h5>
+            <p className="mb-0 text-muted" style={{ fontSize: "13px" }}>
+              {service.desc}
+            </p>
           </div>
-          <h5 className="fw-semibold mb-1" style={{ fontSize: "15px" }}>
-            {service.title}
-          </h5>
-          <p className="mb-0 text-muted" style={{ fontSize: "13px" }}>
-            {service.desc}
-          </p>
         </div>
       ))}
     </div>
   </div>
 </div>
+
+
 
   );
 }
