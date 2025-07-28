@@ -96,7 +96,7 @@ function Services() {
           key={service.id}
           className="cardContainer"
           style={{
-            width: "calc(20% - 16px)", // 5 cards in one row
+            width: "calc(20% - 16px)", 
             backgroundColor: "#fff",
             padding: "16px",
             borderRadius: "12px",

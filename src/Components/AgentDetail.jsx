@@ -13,6 +13,7 @@ import Footer from './Footer'
 import BookNow from './BookNow'
 import ServiceDate from './ServiceDate'
 import SuggestionsSlider from './Suggestion'
+import HowitsWorkAgent from './HowitsWorkAgent'
 
 
 function AgentDetail() {
@@ -186,6 +187,7 @@ function AgentDetail() {
         </div>
       </div>
     </div>
+    <HowitsWorkAgent/>
     <BookNow/>
     <Testimonails/>
 

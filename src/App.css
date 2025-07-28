@@ -79,6 +79,18 @@ body {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
   background-color: #fdfdfd;
 }
+.kitchenCard {
+  transition: all 0.35s ease;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.kitchenCard:hover {
+  transform: scale(1.04) translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+}
+
 
 .cardContainer:hover .iconContainer {
   transform: scale(1.15) rotate(3deg);
@@ -347,4 +359,16 @@ element.style {
 
 .LoginFormImg{
   border-radius: 25px !important;
+}
+
+.number-box {
+  width: 45px;
+  height: 45px;
+  transform: rotate(45deg);
+  background-color: #a194de;
+  font-weight: 700;
+  font-size: 18px;
+}
+.number-box span {
+  transform: rotate(-45deg);
 }
