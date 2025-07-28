@@ -9,6 +9,7 @@ import YogaTrainer from "../assets/Yoga.png";
 import CookingTiffin from "../assets/cooking.png";
 import HomePainting from "../assets/renovation.png";
 import Cleaning from "../assets/Cleaning.png";
+import ResponsiveFilter from './ResponsiveFilter'
 
 function Services() {
   const services = [
@@ -87,15 +88,20 @@ function Services() {
   return (
 <div className="container-fluid py-5" style={{ backgroundColor: "#f9f7f3" }}>
   <div className="container">
-    <h3 className="py-2 mb-4 fw-semibold serviceHeading">
-      Explore Popular <span style={{ color: "#8a6ff2" }}>Services</span>,
-    </h3>
+  <div className="d-flex justify-content-between align-items-center mb-4">
+  <h3 className="fw-semibold serviceHeading m-0 py-2">
+    Explore Popular <span style={{ color: "#8a6ff2" }}>Services</span>,
+  </h3>
+
+ <ResponsiveFilter/>
+</div>
+
 
     <div className="row g-3">
       {services.map((service) => (
         <div
           key={service.id}
-          className="col-6 col-sm-4 col-md-3 col-lg-2-4" // grid column
+          className="col-6 col-sm-4 col-md-3 col-lg-2-4" 
         >
           <div
             className="cardContainer"
@@ -107,7 +113,7 @@ function Services() {
               display: "flex",
               flexDirection: "column",
               alignItems: "flex-start",
-              height: "100%", // maintain equal height
+              height: "100%",
             }}
           >
             <div
