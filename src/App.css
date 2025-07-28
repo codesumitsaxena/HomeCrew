@@ -340,3 +340,7 @@ element.style {
 ::-webkit-scrollbar {
   display: none;
 }
+
+.loginFormHeader{
+  height: 90vh;
+}

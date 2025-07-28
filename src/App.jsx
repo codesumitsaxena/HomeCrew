@@ -11,7 +11,8 @@ import InsideCard from './Components/InsideCard';
 import Ourproces from './Components/Ourproces'
 import Testimonials from './Components/Testimonials'
 import AgentDetail from './Components/AgentDetail';
-import Login from './Components/Login'
+import Login from './Components/Login';
+import Signup from './Components/Signup';
 
 function App() {
   return (
@@ -35,6 +36,8 @@ function App() {
         <Route path="/service/:id" element={<InsideCard />} />
         <Route path="/AgentDetail/:id" element={<AgentDetail />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/Signup" element={<Signup />} />
+
 
       </Routes>
     </Router>

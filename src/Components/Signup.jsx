@@ -3,22 +3,29 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import HeroImg from "../assets/LoginFormImg.jpg";
 
-function Login() {
+function Signup() {
   return (
     <Container fluid>
-      <Row className="loginFormHeader">
-        {/* Left Image */}
-        <Col lg={6} className="d-none d-lg-flex align-items-center justify-content-center">
-          <img src={HeroImg} alt="Home Services" className="img-fluid ps-4 rounded" />
+      <Row className="loginFormHeader bg-light">
+        {/* Left Image - hide on small screens */}
+        <Col
+          lg={6}
+          className="d-none d-lg-flex align-items-center justify-content-center"
+        >
+          <img
+            src={HeroImg}
+            alt="Home Services"
+            className="img-fluid ps-4 rounded"
+          />
         </Col>
 
         {/* Right Form */}
         <Col lg={6} className="d-flex align-items-center justify-content-center">
           <div style={{ maxWidth: "400px" }} className="p-4 w-100">
-            <h2 className="fw-bold mb-2">Welcome back</h2>
-            <p className="text-muted mb-4">Please enter your details</p>
+            <h2 className="fw-bold mb-2">Create an account</h2>
+            <p className="text-muted mb-4">Fill in the details to sign up</p>
 
-            {/* Google Sign-in */}
+            {/* SAME GOOGLE BUTTON AS LOGIN */}
             <Button
               variant="light"
               className="border w-100 mb-3 d-flex align-items-center justify-content-center"
@@ -28,7 +35,7 @@ function Login() {
                 alt="Google"
                 style={{ width: 20, marginRight: 8 }}
               />
-              Sign in with Google
+              Continue with Google
             </Button>
 
             <div className="d-flex align-items-center my-3">
@@ -38,6 +45,11 @@ function Login() {
             </div>
 
             <Form>
+              <Form.Group className="mb-3" controlId="formName">
+                <Form.Label>Full Name</Form.Label>
+                <Form.Control type="text" placeholder="Enter your name" />
+              </Form.Group>
+
               <Form.Group className="mb-3" controlId="formEmail">
                 <Form.Label>Email address</Form.Label>
                 <Form.Control type="email" placeholder="Enter email" />
@@ -48,22 +60,15 @@ function Login() {
                 <Form.Control type="password" placeholder="Password" />
               </Form.Group>
 
-              <div className="d-flex justify-content-between align-items-center mb-3">
-                <Form.Check type="checkbox" label="Remember for 30 days" />
-                <a href="#" className="small text-muted">
-                  Forgot password
-                </a>
-              </div>
-
               <Button variant="dark" type="submit" className="w-100">
-                Sign in
+                Sign up
               </Button>
             </Form>
 
             <p className="text-center mt-3">
-              Don’t have an account?{" "}
-              <Link to="/signup" className="fw-semibold">
-                Sign up
+              Already have an account?{" "}
+              <Link to="/login" className="fw-semibold">
+                Sign in
               </Link>
             </p>
           </div>
@@ -73,4 +78,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Signup;
