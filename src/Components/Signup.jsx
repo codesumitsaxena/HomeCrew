@@ -7,7 +7,6 @@ function Signup() {
   return (
     <Container fluid>
       <Row className="loginFormHeader bg-light">
-        {/* Left Image - hide on small screens */}
         <Col
           lg={6}
           className="d-none d-lg-flex align-items-center justify-content-center"

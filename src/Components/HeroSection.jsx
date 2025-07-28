@@ -123,7 +123,7 @@ function HeroSection() {7
         </Row>
       </Container>
 
-      <Container className="mt-3 mb-5 position-relative">
+      <Container className="mt-4 position-relative">
         <div className="bg-white py-4 px-3 px-md-5 rounded-4 shadow-lg">
           <Row className="g-3 align-items-center">
 

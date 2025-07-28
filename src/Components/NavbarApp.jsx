@@ -15,8 +15,8 @@ function NavbarApp() {
 
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ms-auto align-items-center text-center">
-            <Nav.Link href="#home" className="custom-link">Home</Nav.Link>
-            <Nav.Link as={Link} to="./login" className="custom-link">Services</Nav.Link>
+            <Nav.Link as={Link} to="/" className="custom-link">Home</Nav.Link>
+            <Nav.Link as={Link} to="/login" className="custom-link">Services</Nav.Link>
             <Nav.Link as={Link} to="/AgentDetail/1" className="custom-link">About</Nav.Link>
             <Nav.Link as={Link} to="/service/1" className="custom-link">Contact</Nav.Link>
 

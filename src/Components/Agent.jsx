@@ -1,5 +1,14 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Suggestion1 from '../assets/HostIcon1.jpg'
+import Suggestion2 from '../assets/HostIcon2.jpg'
+import Suggestion3 from '../assets/HostIcon3.jpg'
+import Suggestion4 from '../assets/HostIcon4.jpg'
+import Suggestion5 from '../assets/HostIcon5.jpg'
+import Suggestion6 from '../assets/HostIcon6.jpg'
+import Suggestion7 from '../assets/HostIcon7.jpg'
+import Suggestion8 from '../assets/HostIcon8.jpg'
+import Suggestion10 from '../assets/HostIcon10.jpg'
 
 const suggestions = [
   {
@@ -9,7 +18,7 @@ const suggestions = [
     time: "40 mins",
     price: 699,
     desc: "Quick AC checkup, gas refill, & filter cleaning at your doorstep.",
-    image: "https://randomuser.me/api/portraits/men/21.jpg",
+    image: Suggestion1,
   },
   {
     name: "Tanvi Kapoor",
@@ -18,7 +27,7 @@ const suggestions = [
     time: "50 mins",
     price: 899,
     desc: "Anti-cockroach, termite, and mosquito treatment expert.",
-    image: "https://randomuser.me/api/portraits/women/22.jpg",
+    image: Suggestion2,
   },
   {
     name: "Deepak Rawat",
@@ -27,7 +36,7 @@ const suggestions = [
     time: "60 mins",
     price: 799,
     desc: "Motor, pipe & sensor repair for semi/fully automatic machines.",
-    image: "https://randomuser.me/api/portraits/men/23.jpg",
+    image: Suggestion3,
   },
   {
     name: "Meena Joshi",
@@ -36,7 +45,7 @@ const suggestions = [
     time: "90 mins",
     price: 1199,
     desc: "Full home sanitization with hospital-grade disinfectants.",
-    image: "https://randomuser.me/api/portraits/women/24.jpg",
+    image: Suggestion4,
   },
   {
     name: "Abhay Singh",
@@ -45,7 +54,7 @@ const suggestions = [
     time: "45 mins",
     price: 499,
     desc: "Furniture repair, door hinge fixing, and woodwork service.",
-    image: "https://randomuser.me/api/portraits/men/25.jpg",
+    image: Suggestion5,
   },
   {
     name: "Pooja Sharma",
@@ -54,7 +63,7 @@ const suggestions = [
     time: "30 mins",
     price: 349,
     desc: "Switch board, wiring, and light fitting specialist.",
-    image: "https://randomuser.me/api/portraits/women/26.jpg",
+    image: Suggestion6,
   },
   {
     name: "Rohit Yadav",
@@ -63,7 +72,7 @@ const suggestions = [
     time: "35 mins",
     price: 399,
     desc: "Leak repair, tap fitting, and pipe fixing expert.",
-    image: "https://randomuser.me/api/portraits/men/27.jpg",
+    image: Suggestion7,
   },
   {
     name: "Anjali Verma",
@@ -72,7 +81,7 @@ const suggestions = [
     time: "60 mins",
     price: 999,
     desc: "Bridal makeup, facials & grooming at your doorstep.",
-    image: "https://randomuser.me/api/portraits/women/28.jpg",
+    image: Suggestion8,
   },
   {
     name: "Suresh Raina",
@@ -81,7 +90,7 @@ const suggestions = [
     time: "50 mins",
     price: 749,
     desc: "Cooling issue, gas refill, and compressor repair.",
-    image: "https://randomuser.me/api/portraits/men/29.jpg",
+    image: Suggestion10,
   },
   {
     name: "Nidhi Mehta",
@@ -90,7 +99,7 @@ const suggestions = [
     time: "70 mins",
     price: 1299,
     desc: "Haircut, waxing, and manicure/pedicure services.",
-    image: "https://randomuser.me/api/portraits/women/30.jpg",
+    image: Suggestion1, // repeat from start
   },
   {
     name: "Amit Chauhan",
@@ -99,7 +108,7 @@ const suggestions = [
     time: "100 mins",
     price: 1499,
     desc: "Wall painting, texture, and waterproofing expert.",
-    image: "https://randomuser.me/api/portraits/men/31.jpg",
+    image: Suggestion2,
   },
   {
     name: "Simran Kaur",
@@ -108,9 +117,10 @@ const suggestions = [
     time: "45 mins",
     price: 499,
     desc: "Home yoga sessions for flexibility, strength & peace.",
-    image: "https://randomuser.me/api/portraits/women/32.jpg",
+    image: Suggestion3,
   },
 ];
+
 
 function SuggestionsForYou() {
   return (
