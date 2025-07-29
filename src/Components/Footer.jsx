@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  Container,
-  Row,
-  Col,
-} from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import {
   FaInstagram,
   FaFacebookF,
@@ -19,13 +15,18 @@ import {
 
 function Footer() {
   return (
-    <footer className="bg-light text-dark pt-5 pb-4" style={{ fontSize: "15px" }}>
+    <footer
+      className="bg-light text-dark pt-5 pb-4"
+      style={{ fontSize: "15px" }}
+    >
       <Container>
         <Row className="mb-5">
           <Col xs={12} md={3} className="mb-4">
             <h5 className="fw-bold mb-3">Home Crew</h5>
             <p className="small">
-              Home Crew is your trusted partner for all household needs — from electrical repairs to salon at home. Book reliable services instantly with peace of mind.
+              Home Crew is your trusted partner for all household needs — from
+              electrical repairs to salon at home. Book reliable services
+              instantly with peace of mind.
             </p>
             <div className="d-flex gap-3 fs-5 mt-3 flex-wrap">
               <FaInstagram />
@@ -71,7 +72,7 @@ function Footer() {
             </ul>
           </Col>
 
-          <Col xs={12} md={3} className="mb-4">
+          <Col xs={6} md={3} className="mb-4">
             <h6 className="fw-bold mb-3">Trust & Safety</h6>
             <ul className="list-unstyled small">
               <li>Background Verified Experts</li>
@@ -80,13 +81,15 @@ function Footer() {
               <li>Non-Toxic Materials</li>
               <li>Child & Pet Safe Products</li>
             </ul>
-            <h6 className="fw-bold mt-4 mb-2">We Accept</h6>
-            <div className="d-flex gap-2 fs-3">
-              <FaCcVisa />
-              <FaCcMastercard />
-              <FaApplePay />
-              <FaCcPaypal />
-            </div>
+            <div className="d-none d-sm-block">
+  <h6 className="fw-bold mt-4 mb-2">We Accept</h6>
+  <div className="d-flex gap-2 fs-3 flex-wrap">
+    <FaCcVisa />
+    <FaCcMastercard />
+    <FaApplePay />
+    <FaCcPaypal />
+  </div>
+</div>
           </Col>
         </Row>
 
@@ -99,9 +102,15 @@ function Footer() {
             </small>
           </Col>
           <Col xs={12} md={6} className="text-md-end">
-            <a href="/" className="text-muted text-decoration-none me-3 small">Privacy Policy</a>
-            <a href="/" className="text-muted text-decoration-none me-3 small">Terms & Conditions</a>
-            <a href="/" className="text-muted text-decoration-none small">Sitemap</a>
+            <a href="/" className="text-muted text-decoration-none me-3 small">
+              Privacy Policy
+            </a>
+            <a href="/" className="text-muted text-decoration-none me-3 small">
+              Terms & Conditions
+            </a>
+            <a href="/" className="text-muted text-decoration-none small">
+              Sitemap
+            </a>
           </Col>
         </Row>
       </Container>

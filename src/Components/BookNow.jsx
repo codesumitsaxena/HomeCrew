@@ -2,7 +2,7 @@ import React from 'react';
 
 const BookNow = () => {
   return (
-    <div className="hero-section text-white d-flex align-items-center ">
+    <div className="Book-section text-white d-flex align-items-center">
       <div className="container">
         <div className="row justify-content-start">
           <div className="col-lg-6 col-md-8 col-sm-12">
